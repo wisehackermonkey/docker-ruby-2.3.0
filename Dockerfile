@@ -10,7 +10,7 @@ WORKDIR /
 # 1 line to remove unnecessary build tools and reduce image size
 RUN apk add --update linux-headers build-base openssl-dev libc-dev \
                      libxml2-dev libxslt-dev libffi-dev readline-dev \
-                     jemalloc-dev git bash wget readline-dev && \
+                     jemalloc-dev git bash wget readline-dev nodejs nodejs-npm&& \
 
     wget -O ruby-install-0.6.0.tar.gz https://github.com/postmodern/ruby-install/archive/v0.6.0.tar.gz && \
 
